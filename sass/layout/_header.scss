@@ -1,0 +1,40 @@
+.header {
+  background-color: $clr-btn-bck;
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2.2rem 3rem;
+    @include responsive(tablet) {
+      padding: 2.2rem 4rem;
+    }
+    @include responsive(mobile) {
+      padding: 2.4rem 3rem;
+    }
+  }
+  &__btn {
+    @include responsive(mobile) {
+      display: none;
+    }
+  }
+  &__toggle {
+    display: none;
+    @include responsive(mobile) {
+      display: block;
+      margin-right: 9rem;
+    }
+  }
+  &__sitelogo {
+    @include responsive(mobile) {
+      margin-right: 0rem;
+    }
+  }
+  &__sitenav {
+    @include responsive(mobile) {
+      display: none;
+    }
+  }
+}
+.site-logo {
+  margin-right: 5.8rem;
+}

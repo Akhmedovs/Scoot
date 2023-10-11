@@ -1,0 +1,98 @@
+/* --Section 2-- */
+.sect-one__container {
+  margin-bottom: 0px;
+}
+.sec-two {
+  &__container {
+    padding: 12rem 3rem;
+    @include responsive(tablet) {
+      padding: {
+        top: 14.4rem;
+        bottom: 6.4rem;
+      }
+    }
+    @include responsive(mobile) {
+      padding: 7.2rem 3rem;
+    }
+  }
+  &__img img {
+    max-width: 110.1rem;
+    @include responsive(tablet) {
+      max-width: 68.9rem;
+    }
+    @include responsive(mobile) {
+      display: none;
+    }
+  }
+  &__list {
+    @include responsiveflex;
+    display: none;
+    @include responsive(mobile) {
+      display: block;
+    }
+  }
+  &__item {
+    padding: 2.2rem 9rem;
+    background-color: $clr-lgt-yellow;
+    max-width: 31.1rem;
+    max-height: 9.2rem;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+  &__item h4 {
+    font-family: $fnt-family1;
+    font-style: normal;
+    font-weight: $fnt-weight1;
+    font-size: $h4-size;
+    line-height: $h4-height;
+    letter-spacing: $h4-ltr-spacing;
+    color: $clr-drk-navy;
+  }
+}
+.mini-map {
+  display: none;
+  @include responsive(mobile) {
+    display: block;
+    margin-bottom: 4rem;
+  }
+}
+.london {
+  padding: 2.2rem 10.4rem;
+}
+.jakarta {
+  padding: 2.2rem 9.6rem;
+}
+/* --Section 3-- */
+.sec-three {
+  &__container {
+    @include flex;
+    margin-bottom: 12rem;
+    @include responsive(tablet) {
+      @include responsiveflex;
+    }
+  }
+  &__container h2 {
+    max-width: 35.1rem;
+    margin: 0px;
+    margin-right: 3rem;
+    @include responsive(tablet) {
+      text-align: center;
+      max-width: 45.7rem;
+      margin: 0px;
+      margin-bottom: 4rem;
+    }
+  }
+  &__container p {
+    margin: 0px;
+    margin-right: auto;
+    @include responsive(tablet) {
+      margin: 0px;
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.none {
+  display: none;
+}

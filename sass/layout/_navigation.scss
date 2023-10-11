@@ -1,0 +1,29 @@
+.sitenav {
+  margin-right: auto;
+  @include responsive(tablet) {
+    margin-right: auto;
+  }
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.item:not(:last-child) {
+  margin-right: 3.2rem;
+}
+.link:hover {
+  color: $clr-yellow;
+}
+.link:active {
+  opacity: 0.6;
+}
+.link {
+  font-family: $fnt-family1;
+  font-style: normal;
+  font-weight: $fnt-weight1;
+  font-size: $body-size;
+  line-height: $body-height;
+  color: $clr-dim-gr;
+  transition: all 0.4s ease;
+}

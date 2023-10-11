@@ -1,0 +1,68 @@
+.footer {
+  background-color: $clr-footer;
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3.5rem 0rem 3.2rem 0rem;
+    @include responsive(tablet) {
+      padding: {
+        left: 4rem;
+        right: 4rem;
+      }
+    }
+    @include responsive(mobile) {
+      padding: {
+        top: 6.4rem;
+        bottom: 8.8rem;
+      }
+      @include responsiveflex;
+    }
+  }
+  &__icons a:not(:last-child) {
+    margin-right: 2.4rem;
+  }
+  &__icons svg {
+    color: $clr-yellow;
+    transition: all 0.4s ease;
+  }
+  &__icons svg:hover {
+    color: $clr-btn-bck;
+  }
+  &__icons svg:active {
+    opacity: 0.6;
+    color: $clr-yellow;
+  }
+  &__list {
+    @include responsive(mobile) {
+      @include responsiveflex;
+    }
+  }
+  &__item:not(:last-child) {
+    @include responsive(mobile) {
+      margin-right: 0px;
+      margin-bottom: 1.6rem;
+    }
+  }
+  &__item:nth-last-of-type(1) {
+    @include responsive(mobile) {
+      margin-bottom: 8.5rem;
+    }
+  }
+  &__sitenav {
+    @include responsive(mobile) {
+      margin-right: 0px;
+    }
+  }
+  &__sitelogo {
+    @include responsive(mobile) {
+      margin-right: 0px;
+      margin-bottom: 4.1rem;
+    }
+  }
+  .instagram{
+    img  {
+      fill: black;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@mixin responsive($size) {
+  @if $size==tablet {
+    @media screen and (max-width: 770px) {
+      @content;
+    }
+  } @else if $size==mobile {
+    @media screen and (max-width: 380px) {
+      @content;
+    }
+  }
+}
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@mixin responsiveflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin columnreverse {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+@mixin mobiletitle {
+  max-width: 31.1rem;
+  font-size: 4rem;
+  letter-spacing: -0.0179rem;
+  line-height: 4rem;
+  text-align: center;
+}
+@mixin mobiletitleTwo {
+  max-width: 31.1rem;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  letter-spacing: -0.0143rem;
+}

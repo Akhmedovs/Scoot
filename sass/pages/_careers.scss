@@ -1,0 +1,53 @@
+.careers-div {
+  padding: 12rem 3rem;
+}
+/* --Section 4-- */
+.sct-four {
+  &__item {
+    @include responsiveflex;
+    margin-bottom: 16rem;
+    @include responsive(tablet) {
+      margin-bottom: 12rem;
+    }
+  }
+  &__flex {
+    width: 110.1rem;
+    height: 12.8rem;
+    display: flex;
+    padding: 3.2rem 6.4rem 3.5rem 4rem;
+    background-color: $clr-snow;
+    @include responsive(tablet) {
+      width: 68.9rem;
+    }
+    @include responsive(mobile) {
+      width: 31.1rem;
+      height: 19rem;
+      @include responsiveflex;
+      padding: 3.2rem;
+    }
+  }
+  &__flex div {
+    margin-right: auto;
+    @include responsive(mobile) {
+      margin-right: 0px;
+    }
+  }
+  &__flex:not(:last-child) {
+    margin-bottom: 2.4rem;
+    @include responsive(tablet) {
+      margin-bottom: 1.6rem;
+    }
+  }
+  &__flex h4 {
+    margin-bottom: 0.8rem;
+    @include responsive(mobile) {
+      max-width: 24.7rem;
+    }
+  }
+  &__flex p {
+    color: $clr-drk-navy;
+    @include responsive(mobile) {
+      margin-bottom: 1.6rem;
+    }
+  }
+}
